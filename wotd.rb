@@ -12,9 +12,6 @@ def get_page_following_iframe_if_needed(url)
   return redirect.empty? ? html : Nokogiri::HTML(open(redirect.first).read)
 end
 
-puts ARGV.inspect
-puts NUM_TO_MONTHS.inspect
-
 today = Date.today
 if ARGV.empty?
   month = today.month
