@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'open-uri'
 require 'nokogiri'
+require 'date' # needed for 1.9 compatibility
 
 MONTHS_TO_NUM = (1..12).inject({}) { |hash, month| hash[Date.new(2011, month).strftime('%B')] = month; hash }
 NUM_TO_MONTHS = MONTHS_TO_NUM.dup.invert
