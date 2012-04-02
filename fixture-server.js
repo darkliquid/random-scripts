@@ -101,6 +101,10 @@ function serve_fixture(req, res, fixtures) {
 		response	= responses.shift();
 
 	if(response) {
+		// if the response content is an object, assume it's to be JSON data
+		if(response.content && response.content.toString() == '[object Object]') {
+			response.content = JSON.stringify(response.content);
+		}
 		res.send(response.content, response.headers, response.status);
 	} else {
 		res.send(404);
