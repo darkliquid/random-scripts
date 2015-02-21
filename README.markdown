@@ -5,3 +5,5 @@
  * __fixture-server.js__ - a simple webserver that allows loading of fixtures remotely
 
  * __name_extractor.rb__ - Extract names from babynames.ch
+ 
+ * __name_extractor_sqlite.rb__ - Extract names from babynames.ch into sqlite, with extra metadata
