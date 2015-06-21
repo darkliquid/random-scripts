@@ -7,3 +7,5 @@
  * __name_extractor.rb__ - Extract names from babynames.ch
  
  * __name_extractor_sqlite.rb__ - Extract names from babynames.ch into sqlite, with extra metadata
+ 
+ * __purge-kernels.sh__ - Purge all installed kernels not matching the currently active one
